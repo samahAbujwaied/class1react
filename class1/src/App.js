@@ -16,3 +16,7 @@ class App extends React.Component{
     }
 }
 export default App;
+<<<<<<< HEAD
+=======
+
+>>>>>>> fdef2c65af0a6763ed95b77e1bdb085fbe8f4dca

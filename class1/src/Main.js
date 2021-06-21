@@ -31,3 +31,7 @@ class Main extends React.Component {
 }
 
 export default Main;
+<<<<<<< HEAD
+=======
+
+>>>>>>> fdef2c65af0a6763ed95b77e1bdb085fbe8f4dca
