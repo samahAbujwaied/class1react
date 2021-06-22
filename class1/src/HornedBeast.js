@@ -13,7 +13,7 @@ const styles = {
         paddingRight: "10vw",
         paddingLeft: "10vw"
     }
-} 
+}
 
 class HornedBeast extends React.Component {
     constructor(props) {
@@ -22,7 +22,7 @@ class HornedBeast extends React.Component {
             numberVotes: 0,
         }
     }
-    
+
 
     addVote0 = () => {
         this.setState({
@@ -30,21 +30,30 @@ class HornedBeast extends React.Component {
         })
     }
 
+    clickme = () => {
+        this.props.modal({
+            title: this.props.title,
+            img_url: this.props.img_url,
+            description: this.props.description
+        })
+    }
     render() {
         return (
 
-            <Col xs={12} md={6} sm={9} xl={4} style={{ paddingTop: "10vh" , paddingLeft:"10vh"}} >
-                <Card style={{width:"80%", height:"100%"}} bg={'warning'}>
+            <Col xs={12} md={6} sm={9} xl={4} style={{ paddingTop: "10vh", paddingLeft: "10vh" }} >
+                <Card style={{ width: "80%", height: "100%" }} bg={'warning'}>
                     <Card.Img width={200}
-                        height={280}  onClick={this.addVote0} variant="top" src={this.props.img_url} alt={this.props.title} />
+                        height={280} onClick={this.addVote0} variant="top" src={this.props.img_url} alt={this.props.title} />
                     <Card.Body>
                         <Card.Title style={{ alignItems: 'center' }} >{this.props.title}</Card.Title>
                         <Card.Text>
                             {this.props.description}
                         </Card.Text>
                     </Card.Body>
-
-                    <Button variant="info"> 💖 {this.state.numberVotes}</Button>
+                    
+                        <Button style={{ width: "50%", marginLeft: "10vh" }} variant="info"> 💖 {this.state.numberVotes}</Button>
+                        <Button  style={{ width: "50%", marginTop: "2vh", marginBottom:'2vh', marginLeft: "10vh" }} variant="danger" onClick={this.clickme}> Click me </Button>
+                   
 
                 </Card>
             </Col>
