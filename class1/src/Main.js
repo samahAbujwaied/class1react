@@ -2,7 +2,19 @@
 import React from 'react';
 import HornedBeast from './HornedBeast'
 import hornsAnimalData from './hornsAnimalData.json'
+import {Container, CardGroup,Card,Row} from 'react-bootstrap'
 
+// const styles = {
+//     card: {
+//       backgroundColor: '#B7E0F2',
+//       borderRadius: 55,
+//       padding: '3rem'
+//     },
+//     cardImage: {
+//       objectFit: 'cover',
+//       borderRadius: 55
+//     }
+//   }
 class Main extends React.Component {
 
     constructor(props) {
@@ -11,7 +23,10 @@ class Main extends React.Component {
     
     render() {
         return ( 
-            <div>
+            // <Container xs={4} fluid>
+            // <CardGroup className="m-5 d-block">
+            //   <Card className="m-5 border-0 shadow" style={styles.card}>
+            <Row>
                 {
                     hornsAnimalData.map(item => {
                         return (
@@ -24,14 +39,13 @@ class Main extends React.Component {
                         )
                     })
                 }
-            </div>
+            </Row>
+    //         </Card>
+    //   </CardGroup>
+    // </Container>
         )
     }
 
 }
 
 export default Main;
-<<<<<<< HEAD
-=======
-
->>>>>>> fdef2c65af0a6763ed95b77e1bdb085fbe8f4dca
