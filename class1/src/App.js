@@ -7,7 +7,7 @@ import Footer from './Footer';
 class App extends React.Component{
     render(){
         return(
-            <div>
+            <div style={{background:'lightyellow'}}>
             <Header/>
             <Main/>
             <Footer/>
@@ -16,7 +16,3 @@ class App extends React.Component{
     }
 }
 export default App;
-<<<<<<< HEAD
-=======
-
->>>>>>> fdef2c65af0a6763ed95b77e1bdb085fbe8f4dca
