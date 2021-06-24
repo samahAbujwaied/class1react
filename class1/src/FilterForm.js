@@ -4,7 +4,7 @@ import { Form ,DropdownButton,Dropdown} from 'react-bootstrap'
 
 export class FilterForm extends Component {
     updateForm = (e) => {
-        let filteredArr = []
+        let filteredArr = {}
         if (e != 'All') {
             filteredArr = this.props.hornsData.filter(value => {
                 if (value.horns == e)

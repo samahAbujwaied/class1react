@@ -42,7 +42,9 @@ class App extends React.Component{
                     hornsData={this.state.hornsData}
 
                 />
-            <Main selectedmodal={this.handleshow } data={this.state.hornsFiltredArr} updateData={this.updateData} />
+            <Main selectedmodal={this.handleshow } 
+            data={this.state.hornsFiltredArr} 
+            updateData={this.updateData} />
             <SelectedBeast handleExit={this.handleclose} showdata={this.state.show } modaldata={this.state.modaldata}/>
             <Footer/>
             </div>
