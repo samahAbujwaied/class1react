@@ -5,6 +5,9 @@ class Header extends React.Component {
         return (
             <div style={{background:"lemonchiffon" , textAlign:"center" ,fontFamily: 'Bradley Hand'}}>
                 <h1> Horns Gallery </h1>
+                <h2>
+                    {this.props.total}
+                </h2>
             </div>
         )
     }
