@@ -4,35 +4,25 @@ import HornedBeast from './HornedBeast'
 import hornsAnimalData from './hornsAnimalData.json'
 import {Container, CardGroup,Card,Row} from 'react-bootstrap'
 
-
-class Main extends React.Component {
-
-  
-    
+class Main extends React.Component {    
     render() {
-        return ( 
-            // <Container xs={4} fluid>
-            // <CardGroup className="m-5 d-block">
-
-            //   <Card className="m-5 border-0 shadow" style={styles.card}>
+        return (     
             <Row>
                 {
-                    this.props.data.map(item => {
+                    hornsAnimalData.map(item => {
                         return (
                             <HornedBeast
                                 title={item.title}
                                 img_url={item.image_url}
                                 description={item.description}
-                                modal={this.props.selectedmodal}
+                                keyword={item.keyword}
+                                selectedmodal={this.props.selectedmodal}
                             
                             />
                         )
                     })
                 }
             </Row>
-    //         </Card>
-    //   </CardGroup>
-    // </Container>
         )
     }
 

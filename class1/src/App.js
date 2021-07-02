@@ -1,7 +1,6 @@
 import React from 'react';
 import hornsAnimalData from './hornsAnimalData.json'
 import SelectedBeast from './SelectedBeast'
-
 import Header from './Header';
 import Main from './Main';
 import Footer from './Footer';
@@ -31,7 +30,7 @@ class App extends React.Component{
         return(
             <div style={{background:'lightyellow'}}>
             <Header/>
-            <Main selectedmodal={this.handleshow } data={this.state.hornsData} />
+            <Main selectedmodal={this.handleshow }/>
             <SelectedBeast handleExit={this.handleclose} showdata={this.state.show } modaldata={this.state.modaldata}/>
             <Footer/>
             </div>

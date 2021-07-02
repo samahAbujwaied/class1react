@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Card,Modal, Button } from 'react-bootstrap'
 
-export class SelectedBeast extends Component {
+class SelectedBeast extends Component {
     render() {
         return (
             <>
@@ -18,6 +18,9 @@ export class SelectedBeast extends Component {
 
                                 <Card.Text>
                                     {this.props.modaldata.description}
+                                </Card.Text>
+                                <Card.Text>
+                                    {this.props.modaldata.keyword}
                                 </Card.Text>
                             </Card.Body>
 
